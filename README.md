@@ -1,16 +1,19 @@
-# Project-02—2D-Arcade-Space-Shooter
+# Space Shooter
 
-Second project, September 25, 2022
+Project #2 for ML-MSCH-C220 at Indiana University, creadted September 25th, 2022
 
-Description
+A simple 2D space shooter
+
 
 ## Implementation
+Keyboard control, top-down ship that can shoot asteroids and an enemy.
+
 Created using [Godot 3.5](https://godotengine.org/download)
 
 ## References
 
 ## Future Development
-Advanced Features
+None
 
 ## Created by
 Sean Kang
