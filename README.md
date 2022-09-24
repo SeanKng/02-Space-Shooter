@@ -1,15 +1,16 @@
-# Project Name
+# Project-02—2D-Arcade-Space-Shooter
 
-Context and date
+Second project, September 25, 2022
 
 Description
 
 ## Implementation
-Which features you included
+Created using [Godot 3.5](https://godotengine.org/download)
 
 ## References
 
 ## Future Development
+Advanced Features
 
 ## Created by
-Jason Francis
+Sean Kang
