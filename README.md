@@ -18,11 +18,15 @@ Created using [Godot 3.5](https://godotengine.org/download)
 
 ## References
 Background [ESA](https://esahubble.org/images/potw1834a/)
+
 Explosion [OpenGameArt](https://opengameart.org/content/explosion-sheet)
+
 Asteroid, Enemy, Player_Spaceship [Kennyl(https://kenney.nl/assets/space-shooter-redux)
 
 BGM [Youtube](https://www.youtube.com/watch?v=7lwPjKg_g3k)
+
   Author = Magatrex_Intervox
+  
   License = Adrev for a 3rd Party, Adrev for Rights Holder(Intervox 대행); Adrev Publishing
   
 ## Future Development
