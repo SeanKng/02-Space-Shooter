@@ -7,8 +7,11 @@ A simple 2D space shooter
 
 ## Implementation
 Keyboard control, top-down ship that can shoot asteroids and enemies.
+
 As the time goes on, the number of asteroids and enemies get increase.
+
 There is no time limit, the games continue until your live is 0.
+
 There are some item that can help you increase ammo and lives. 
 
 Created using [Godot 3.5](https://godotengine.org/download)
