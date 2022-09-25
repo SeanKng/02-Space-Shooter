@@ -21,7 +21,7 @@ Background [ESA](https://esahubble.org/images/potw1834a/)
 
 Explosion [OpenGameArt](https://opengameart.org/content/explosion-sheet)
 
-Asteroid, Enemy, Player_Spaceship [Kennyl(https://kenney.nl/assets/space-shooter-redux)
+Asteroid, Enemy, Player_Spaceship [Kenny](https://kenney.nl/assets/space-shooter-redux)
 
 BGM [Youtube](https://www.youtube.com/watch?v=7lwPjKg_g3k)
 
