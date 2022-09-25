@@ -6,9 +6,11 @@ var max_speed = 400.0
 var rot_speed = 5.0
 
 
+
 var nose = Vector2(0,-60)
 
 var health = 10
+var reloaded = true
 
 onready var Bullet = load("res://Player/Bullet.tscn")
 onready var Explosion = load("res://Effects/Explosion.tscn")
@@ -35,8 +37,12 @@ func get_input():
 		rotation_degrees -= rot_speed
 	if Input.is_action_pressed("right"):
 		rotation_degrees += rot_speed	
-	if Input.is_action_just_pressed("shoot"):
-		shoot()
+	if Input.is_action_pressed("shoot"):
+		if Global.ammo > 0 and reloaded:
+			shoot()
+			reloaded = false
+			$Reload.start()
+			
 	return dir.rotated(rotation)	
 	
 func shoot():
@@ -46,7 +52,7 @@ func shoot():
 		Effects.add_child(bullet)
 		bullet.rotation = rotation
 		bullet.global_position = global_position + nose.rotated(rotation)
-	
+	Global.update_ammo(-1)		
 	
 func damage(d):
 	health -= d
@@ -57,6 +63,8 @@ func damage(d):
 			explosion.global_position = global_position
 			Effects.add_child(explosion)
 		Global.update_lives(-1)	
+		Global.update_score(-10)
+		Global.reset_ammo()
 		queue_free()	
 	
 
@@ -66,3 +74,7 @@ func _on_Area2D_body_entered(body):
 		if body.has_method("damage"):
 			body.damage(100)
 		damage(100)
+
+
+func _on_Reload_timeout():
+	reloaded = true

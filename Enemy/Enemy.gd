@@ -1,10 +1,13 @@
 extends KinematicBody2D
 
 onready var Enemy_Bullet = load("res://Enemy/Enemy_Bullet.tscn")
+
 var nose = Vector2(0, -60)
-var health = 10
+var direction = Vector2(1.5,0)
+var health = 3
 
 var score = 50
+
 
 func _ready():
 	pass
@@ -13,6 +16,11 @@ func damage(d):
 	health -= d
 	if health <= 0:
 		Global.update_score(score)
+		queue_free()
+
+func _physics_process(_delta):
+	position += direction
+	if position.x >= 1000:
 		queue_free()
 
 
