@@ -27,7 +27,7 @@ BGM [Youtube](https://www.youtube.com/watch?v=7lwPjKg_g3k)
 
   Author = Magatrex_Intervox
   
-  License = Adrev for a 3rd Party, Adrev for Rights Holder(Intervox 대행); Adrev Publishing
+  License = Adrev for a 3rd Party, Adrev for Rights Holder(Intervox Acts); Adrev Publishing
   
 ## Future Development
 None
